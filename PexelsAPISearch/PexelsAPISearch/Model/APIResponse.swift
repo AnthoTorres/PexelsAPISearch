@@ -11,6 +11,7 @@ import Foundation
 struct APIResponse: Decodable {
     var Response: Response
 }
+
 /**
  The Photo object is a JSON formatted version of a Pexels photo. The Photo API endpoints respond with the photo data formatted in this shape.
  
@@ -21,11 +22,11 @@ struct APIResponse: Decodable {
  */
 
 struct Response: Decodable {
-    
     var total_results: Int
     var page: Int
     var per_page: Int
     var photos: [Photo]
+    var next_page: String
 }
 
 /**

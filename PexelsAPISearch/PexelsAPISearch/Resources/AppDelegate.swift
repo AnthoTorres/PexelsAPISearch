@@ -8,6 +8,9 @@
 
 import UIKit
 
+/// This is the place where stuff is saved. (never could get this up and running)
+public let userDefualts = UserDefaults.standard
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
